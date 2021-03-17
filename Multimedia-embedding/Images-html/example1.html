@@ -7,6 +7,7 @@
     <title>Images in HTML</title>
   </head>
   <body>
+    <!-- Basic Way #1 -->
     <img
       width="200px"
       height="171px"
@@ -14,5 +15,21 @@
       src="https://raw.githubusercontent.com/mdn/learning-area/master/html/multimedia-and-embedding/images-in-html/dinosaur_small.jpg"
       alt="The head and torso of a dinosaur skeleton; it has a large head with long sharp teeth"
     />
+    <!-- End -->
+
+    <!-- Correct way using figure  -->
+    <figure>
+      <img
+        width="200px"
+        height="171px"
+        src="https://raw.githubusercontent.com/mdn/learning-area/master/html/multimedia-and-embedding/images-in-html/dinosaur_small.jpg"
+        alt="The head and torso of a dinosaur skeleton; it has a large head with long sharp teeth"
+      />
+      <figcaption>
+        A T-Rex on display in the Manchester University Museum.
+      </figcaption>
+    </figure>
+
+    <!-- End -->
   </body>
 </html>
