@@ -120,7 +120,15 @@
     <main>
       <article>
         <!-- insert iframe from youtube -->
-
+        <iframe
+          width="400"
+          height="315"
+          src="https://www.youtube.com/embed/ojcNcvb1olg"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
         <h2>Rocking the free web</h2>
 
         <p>
@@ -145,20 +153,33 @@
         <!-- insert images with srcsets and sizes -->
         <a href="https://www.mozilla.org/en-US/firefox/new/">
           <picture>
-            <source media="(max-width: 120px)"
-            srcset="./images/mozilla-dinosaur-head-120.png>
+            <source
+              media="(max-width: 120px)"
+              srcset="./images/firefox_logo-only_RGB_120.png"
+            />
+            <source
+              media="(min-width: 400px)"
+              srcset="./images/firefox_logo-only_RGB_400.png"
+            />
+            <img src="./originals/firefox_logo-only_RGB.png alt="Mozilla Firefox
+            Logo">
+          </picture>
+        </a>
+        <a href="https://www.mozilla.org/">
+          <picture>
+            <source
+              media="(max-width: 120px)"
+              srcset="./images/mozilla-dinosaur-head-120.png"
+            />
             <source
               media="(min-width: 400px)"
               srcset="./images/mozilla-dinosaur-head-400.png"
             />
             <img
               src="./originals/mozilla-dinosaur-head.png"
-              alt="Red-head mozilla dinosaur"
+              alt="Red-head Mozilla Dinosaur"
             />
           </picture>
-        </a>
-        <a href="https://www.mozilla.org/">
-          <img />
         </a>
         <a href="https://addons.mozilla.org/">
           <picture>
@@ -188,6 +209,17 @@
 
       <div class="red-panda">
         <!-- insert picture element -->
+        <picture>
+          <source
+            media="(max-width: 601px)"
+            srcset="./images/red-panda-600.jpg"
+          />
+          <source
+            media="(min-width: 1200px)"
+            srcset="./images/red-panda-1200.jpg"
+          />
+          <img src="./originals/red-panda.jpg" alt="Red Panda" />
+        </picture>
       </div>
     </main>
   </body>
