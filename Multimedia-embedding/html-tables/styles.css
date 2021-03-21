@@ -8,9 +8,7 @@ table {
   letter-spacing: 1px;
   font-size: 0.8rem;
 }
-colgroup {
-  background-color: darkkhaki;
-}
+
 td,
 th {
   border: 1px solid rgb(190, 190, 190);
