@@ -2,10 +2,99 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Table template</title>
-    <link href="minimal-table.css" rel="stylesheet" type="text/css" />
+    <title>Planets Data - School Project</title>
+    <link href="./styles.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <h1>Table template</h1>
+    <h1>Planets Data</h1>
+    <table>
+      <caption>
+        Data about the planets of our solar system (Planetary facts taken from
+        <a href="http://nssdc.gsfc.nasa.gov/planetary/factsheet/"
+          >Nasa's Planetary Fact Sheet - Metric</a
+        >).
+      </caption>
+      <colgroup>
+        <col span="2" />
+        <col style="border: 2px solid black" />
+        <col span="9" />
+      </colgroup>
+      <thead>
+        <tr>
+          <td colspan="2"></td>
+          <th id="name">Name</th>
+          <th id="mass">Mass (10<sup>24</sup>kg)</th>
+          <th id="diameter">Diameter (km)</th>
+          <th id="density">Density (kg/m<sup>3</sup>)</th>
+          <th id="gravity">Gravity (m/s<sup>2</sup>)</th>
+          <th id="length">Length of day (hours)</th>
+          <th id="distance">Distance from Sun (10<sup>6</sup>km)</th>
+          <th id="mean">Mean temperature (°C)</th>
+          <th id="number">Number of moons</th>
+          <th id="notes">Notes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th id="terrestrial" rowspan="4" colspan="2">Terrestrial planets</th>
+          <th id="mercury">Mercury</th>
+          <td headers="mercury mass">0.330</td>
+          <td headers="mercury diameter">4,879</td>
+          <td headers="mercury density">5427</td>
+          <td headers="mercury gravity">3.7</td>
+          <td headers="mercury length of day">4222.6</td>
+          <td headers="mercury distance from sun">57.9</td>
+          <td headers="mercury mean temperature">167</td>
+          <td headers="mercury number of moons">0</td>
+          <td headers="mercury notes">Closest to the Sun</td>
+        </tr>
+        <tr>
+          <th id="venus">Venus</th>
+          <td headers="venus mass">4.87</td>
+          <td headers="venus diameter">12,104</td>
+          <td headers="venus density">5243</td>
+          <td headers="venus gravity">8.9</td>
+          <td headers="venus length of day">2802.0</td>
+          <td headers="venus distance from sun">108.2</td>
+          <td headers="venus mean temperature">464</td>
+          <td headers="venus number of moons">0</td>
+          <td headers="venus notes"></td>
+        </tr>
+        <tr>
+          <th id="earth">Earth</th>
+          <td headers="earth mass"></td>
+          <td headers="earth diameter"></td>
+          <td headers="earth density"></td>
+          <td headers="earth gravity"></td>
+          <td headers="earth length of day"></td>
+          <td headers="earth distance from sun"></td>
+          <td headers="earth mean temperature"></td>
+          <td headers="earth number of moons"></td>
+          <td headers="earth notes"></td>
+        </tr>
+        <tr>
+          <th>Mars</th>
+        </tr>
+        <tr>
+          <th rowspan="4">Jovian planets</th>
+          <th rowspan="2">Gas giants</th>
+          <th>Jupiter</th>
+        </tr>
+        <tr>
+          <th>Saturn</th>
+        </tr>
+        <tr>
+          <th rowspan="2">Ice giants</th>
+          <th>Uranus</th>
+        </tr>
+        <tr>
+          <th>Neptune</th>
+        </tr>
+        <tr>
+          <th colspan="2">Dwarf planets</th>
+          <th>Pluto</th>
+        </tr>
+      </tbody>
+    </table>
   </body>
 </html>
